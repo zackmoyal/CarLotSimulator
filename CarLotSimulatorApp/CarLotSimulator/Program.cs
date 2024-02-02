@@ -24,43 +24,55 @@ namespace CarLotSimulator
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
             var carLot = new CarLot();
 
-            Car car1 = new Car();
-            Car car2 = new Car();
-            Car car3 = new Car();
+            Car toyota = new Car();
+            Console.WriteLine($"The number of cars in the lot is: {CarLot.numberOfCars}");
+            Console.WriteLine();
 
-            car1.Year = 2020;
-            car1.Make = "Toyota";
-            car1.Model = "Camry";
-            car1.EngineNoise = "Skrrt skrrt";
-            car1.HonkNoise = "Why hello there";
-            car1.IsDriveable = true;
+            Car honda = new Car();
+            Console.WriteLine($"The number of cars in the lot is: {CarLot.numberOfCars}");
+            Console.WriteLine();
 
-            car2.Year = 2020;
-            car2.Make = "Honda";
-            car2.Model = "Accord";
-            car2.EngineNoise = "Vroom vroom";
-            car2.HonkNoise = "Beep beep";
-            car2.IsDriveable = true;
+            Car tesla = new Car();
+            Console.WriteLine($"The number of cars in the lot is: {CarLot.numberOfCars}");
+            Console.WriteLine();
 
-            car3.Year = 2020;
-            car3.Make = "Tesla";
-            car3.Model = "Model X";
-            car3.EngineNoise = "*battery engine sound*";
-            car3.HonkNoise = "I am from the future";
-            car3.IsDriveable = true;
+            toyota.Year = 2020;
+            toyota.Make = "Toyota";
+            toyota.Model = "Camry";
+            toyota.EngineNoise = "Skrrt skrrt";
+            toyota.HonkNoise = "Why hello there";
+            toyota.IsDriveable = true;
 
-            car1.MakeEngineNoise();
-            car1.MakeHonkNoise();
+            honda.Year = 2020;
+            honda.Make = "Honda";
+            honda.Model = "Accord";
+            honda.EngineNoise = "Vroom vroom";
+            honda.HonkNoise = "Beep beep";
+            honda.IsDriveable = true;
 
-            car2.MakeEngineNoise();
-            car2.MakeHonkNoise();
+            tesla.Year = 2020;
+            tesla.Make = "Tesla";
+            tesla.Model = "Model X";
+            tesla.EngineNoise = "*battery engine sound*";
+            tesla.HonkNoise = "I am from the future";
+            tesla.IsDriveable = true;
 
-            car3.MakeEngineNoise();
-            car3.MakeHonkNoise();
+            //toyota.MakeEngineNoise();
+            //toyota.MakeHonkNoise();
+            //Console.WriteLine();
 
-            carLot.Cars.Add(car1);
-            carLot.Cars.Add(car2);
-            carLot.Cars.Add(car3);
+            //honda.MakeEngineNoise();
+            //honda.MakeHonkNoise();
+            //Console.WriteLine();
+
+            //tesla.MakeEngineNoise();
+            //tesla.MakeHonkNoise();
+
+            carLot.Cars.Add(toyota);
+
+            carLot.Cars.Add(honda);
+
+            carLot.Cars.Add(tesla);
 
             //*************BONUS X 2*************//
 
@@ -69,11 +81,11 @@ namespace CarLotSimulator
             //Instanciate the a Carlot at the beginning of the program and as you create a car add the car to the list.
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
 
-            Console.WriteLine("\nCars in the Car Lot:");
-            foreach (var car in carLot.Cars)
-            {
-                Console.WriteLine($"{car.Year} {car.Make} {car.Model}");
-            }
+            //Console.WriteLine("\nCars in the Car Lot:");
+            //foreach (var car in carLot.Cars)
+            //{
+            //    Console.WriteLine($"{car.Year} {car.Make} {car.Model}");
+            //}
         }
     }
 }

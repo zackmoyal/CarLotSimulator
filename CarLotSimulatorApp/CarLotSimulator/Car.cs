@@ -8,10 +8,13 @@ namespace CarLotSimulator
 {
     public class Car
     {
+        //default constructor
         public Car() 
         {
-
+            CarLot.numberOfCars++;
         }
+
+        //parameterized constructor
         public Car(
             int year,
             string model,
